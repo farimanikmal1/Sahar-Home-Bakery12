@@ -6,6 +6,11 @@
 
     <title>Sahar Home Bakery | Afghan Homemade Bakery</title>
 
+    <meta
+        name="description"
+        content="Sahar Home Bakery offers authentic Afghan homemade sweets, pastries and traditional specialties."
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,423 +20,567 @@
 
     <header class="header">
 
-        <div class="logo-container">
+        <div class="logo">
             <img src="Logo.jpeg" alt="Sahar Home Bakery Logo">
         </div>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#products">Our Products</a>
-            <a href="#about">About Us</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="active">HOME</a>
+            <a href="#products">OUR PRODUCTS</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#contact">CONTACT</a>
+
+            <a href="#products" class="order-button">
+                <span>🛒</span>
+                ORDER NOW
+            </a>
         </nav>
+
+        <button class="menu-button" aria-label="Open menu">
+            ☰
+        </button>
 
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- ================= HERO SECTION ================= -->
 
-    <section class="hero" id="home">
+    <main>
 
-        <div class="hero-content">
+        <section id="home" class="hero">
 
-            <p class="small-title">
-                Homemade with Love
-            </p>
+            <div class="hero-overlay"></div>
 
-            <h1>
-                Sahar Home Bakery
-            </h1>
+            <div class="hero-content">
+
+                <div class="small-title">
+                    <span>♥</span>
+                    HOMEMADE WITH LOVE
+                    <span>♥</span>
+                </div>
+
+                <h1>
+                    Sahar Home Bakery
+                </h1>
+
+                <h2>
+                    AUTHENTIC AFGHAN HOMEMADE BAKERY
+                </h2>
+
+                <div class="gold-divider">
+                    <span>❧</span>
+                    <span>♥</span>
+                    <span>❧</span>
+                </div>
+
+                <p>
+                    Freshly prepared Afghan sweets, pastries and
+                    traditional homemade specialties made with care
+                    and premium ingredients.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#products" class="primary-button">
+                        DISCOVER OUR PRODUCTS
+                        <span>→</span>
+                    </a>
+
+                    <a href="#about" class="secondary-button">
+                        <span class="play-icon">▶</span>
+                        WATCH VIDEO
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Slider dots -->
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SPECIALTIES TITLE ================= -->
+
+        <section class="specialties-heading">
+
+            <div class="leaf-decoration">
+                ❧
+            </div>
 
             <h2>
-                Authentic Afghan Homemade Bakery
+                OUR SPECIALTIES
             </h2>
 
-            <p>
-                Freshly prepared Afghan sweets, pastries and traditional
-                homemade specialties made with care and premium ingredients.
-            </p>
+            <div class="leaf-decoration">
+                ❧
+            </div>
 
-            <a href="#products" class="hero-button">
-                Discover Our Products
-            </a>
-
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= PRODUCTS ================= -->
+        <!-- ================= PRODUCTS ================= -->
 
-    <section class="products-section" id="products">
+        <section id="products" class="products-section">
 
-        <div class="section-title">
+            <div class="section-intro">
 
-            <p>Our Specialties</p>
+                <span class="section-label">
+                    FROM OUR KITCHEN
+                </span>
 
-            <h2>
-                Freshly Made For You
-            </h2>
+                <h2>
+                    Traditional Afghan Favorites
+                </h2>
 
-            <span>
-                Traditional Afghan flavours with a homemade touch.
-            </span>
-
-        </div>
-
-
-        <div class="products-grid">
-
-
-            <!-- Khatai -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img src="khatai.jpeg" alt="Afghan Khatai Cookies">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Afghan Khatai
-                    </h3>
-
-                    <p>
-                        Soft and buttery Afghan cookies with cardamom
-                        and pistachios.
-                    </p>
-
-                    <button onclick="orderProduct('Afghan Khatai')">
-                        Order Now
-                    </button>
-
-                </div>
+                <p>
+                    Discover our selection of homemade Afghan sweets,
+                    pastries and traditional specialties.
+                </p>
 
             </div>
 
 
-            <!-- Kolchi Baskity -->
+            <div class="products-grid">
 
-            <div class="product-card">
 
-                <div class="product-image">
-                    <img src="Kolchi Baskity.jpeg" alt="Kolchi Baskity">
-                </div>
+                <!-- Khatai -->
 
-                <div class="product-info">
+                <article class="product-card">
 
-                    <h3>
-                        Kolchi Baskity
-                    </h3>
+                    <div class="product-image">
+                        <img
+                            src="khatai.jpeg"
+                            alt="Afghan Khatai cookies"
+                        >
+                    </div>
 
-                    <p>
-                        Delicious homemade Afghan cookies prepared
-                        with care.
-                    </p>
+                    <div class="product-info">
 
-                    <button onclick="orderProduct('Kolchi Baskity')">
-                        Order Now
-                    </button>
+                        <span class="product-category">
+                            AFGHAN COOKIES
+                        </span>
 
-                </div>
+                        <h3>
+                            Khatai
+                        </h3>
+
+                        <p>
+                            Soft and buttery Afghan cookies
+                            with a delicate traditional flavor.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Manto -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Manto.jpeg"
+                            alt="Afghan Mantu"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            TRADITIONAL DISH
+                        </span>
+
+                        <h3>
+                            Mantu
+                        </h3>
+
+                        <p>
+                            Traditional Afghan dumplings
+                            prepared with care and authentic flavors.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Ashak -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Ashak.jpeg"
+                            alt="Afghan Ashak"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            AFGHAN SPECIALTY
+                        </span>
+
+                        <h3>
+                            Ashak
+                        </h3>
+
+                        <p>
+                            Homemade Afghan dumplings
+                            served with traditional toppings.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Bolani -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Bolani.jpeg"
+                            alt="Afghan Bolani"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            TRADITIONAL BREAD
+                        </span>
+
+                        <h3>
+                            Bolani
+                        </h3>
+
+                        <p>
+                            Delicious handmade Afghan flatbread
+                            filled with flavorful ingredients.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Kolchi Baskity -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Kolchi Baskity.jpeg"
+                            alt="Afghan Kolchi Baskity"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            HOMEMADE COOKIES
+                        </span>
+
+                        <h3>
+                            Kolchi Baskity
+                        </h3>
+
+                        <p>
+                            Freshly baked homemade cookies
+                            made with premium ingredients.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Mixed Kolcha -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Mixed Kolcha.jpeg"
+                            alt="Mixed Afghan Kolcha"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            SWEET COLLECTION
+                        </span>
+
+                        <h3>
+                            Mixed Kolcha
+                        </h3>
+
+                        <p>
+                            A beautiful selection of homemade
+                            Afghan cookies and sweets.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Kulchi Pastai -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Kulchi Pastai.jpeg"
+                            alt="Kulchi Pastai"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            AFGHAN SWEETS
+                        </span>
+
+                        <h3>
+                            Kulchi Pastai
+                        </h3>
+
+                        <p>
+                            Traditional Afghan sweet pastry
+                            prepared fresh for every occasion.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Cream Roll -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Cream Rol.jpeg"
+                            alt="Cream Roll"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            PASTRIES
+                        </span>
+
+                        <h3>
+                            Cream Roll
+                        </h3>
+
+                        <p>
+                            Light and delicious pastry
+                            with a creamy filling.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Jilabi -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Jilabi.jpeg"
+                            alt="Afghan Jilabi"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            TRADITIONAL SWEET
+                        </span>
+
+                        <h3>
+                            Jilabi
+                        </h3>
+
+                        <p>
+                            Crispy, golden and freshly prepared
+                            traditional Afghan sweet.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Namaki -->
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="Namaki.jpeg"
+                            alt="Namaki"
+                        >
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            SAVORY PASTRY
+                        </span>
+
+                        <h3>
+                            Namaki
+                        </h3>
+
+                        <p>
+                            Homemade savory pastry with
+                            a delicious traditional taste.
+                        </p>
+
+                        <button class="product-button">
+                            VIEW PRODUCT
+                        </button>
+
+                    </div>
+
+                </article>
 
             </div>
 
-
-            <!-- Kulchi Pastai -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img src="Kulchi Pastai.jpeg" alt="Kulchi Pastai">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Kulchi Pastai
-                    </h3>
-
-                    <p>
-                        Traditional sweet pastries with a delicate
-                        homemade taste.
-                    </p>
-
-                    <button onclick="orderProduct('Kulchi Pastai')">
-                        Order Now
-                    </button>
-
-                </div>
-
-            </div>
+        </section>
 
 
-            <!-- Mixed Kolcha -->
+        <!-- ================= ABOUT ================= -->
 
-            <div class="product-card">
+        <section id="about" class="about-section">
 
-                <div class="product-image">
-                    <img src="Mixed Kolcha.jpeg" alt="Mixed Afghan Cookies">
-                </div>
+            <div class="about-content">
 
-                <div class="product-info">
+                <span class="section-label">
+                    OUR STORY
+                </span>
 
-                    <h3>
-                        Mixed Kolcha
-                    </h3>
+                <h2>
+                    Made With Love,
+                    Inspired By Afghanistan
+                </h2>
 
-                    <p>
-                        A beautiful selection of different homemade
-                        Afghan cookies.
-                    </p>
+                <p>
+                    At Sahar Home Bakery, we bring the authentic
+                    flavors of Afghan homemade baking to your table.
+                    Every sweet and pastry is prepared with care,
+                    traditional recipes and quality ingredients.
+                </p>
 
-                    <button onclick="orderProduct('Mixed Kolcha')">
-                        Order Now
-                    </button>
+                <p>
+                    From family celebrations to special occasions,
+                    our goal is to make every bite memorable.
+                </p>
 
-                </div>
+                <a href="#contact" class="primary-button">
+                    CONTACT US
+                    <span>→</span>
+                </a>
 
             </div>
 
+        </section>
 
-            <!-- Cream Roll -->
 
-            <div class="product-card">
+        <!-- ================= CONTACT ================= -->
 
-                <div class="product-image">
-                    <img src="Cream Rol.jpeg" alt="Cream Roll">
-                </div>
+        <section id="contact" class="contact-section">
 
-                <div class="product-info">
+            <div class="section-intro">
 
-                    <h3>
-                        Cream Roll
-                    </h3>
+                <span class="section-label">
+                    GET IN TOUCH
+                </span>
 
-                    <p>
-                        Light and delicious pastry filled with
-                        creamy sweetness.
-                    </p>
+                <h2>
+                    We'd Love To Hear From You
+                </h2>
 
-                    <button onclick="orderProduct('Cream Roll')">
-                        Order Now
-                    </button>
-
-                </div>
+                <p>
+                    For orders, questions or special requests,
+                    feel free to contact us.
+                </p>
 
             </div>
-
-
-            <!-- Jilabi -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img src="Jilabi.jpeg" alt="Jilabi">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Jilabi
-                    </h3>
-
-                    <p>
-                        Crispy and sweet traditional Afghan-style
-                        homemade Jilabi.
-                    </p>
-
-                    <button onclick="orderProduct('Jilabi')">
-                        Order Now
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Namaki -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img src="Namaki.jpeg" alt="Namaki">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Namaki
-                    </h3>
-
-                    <p>
-                        Savoury homemade pastries with a delicious
-                        traditional flavour.
-                    </p>
-
-                    <button onclick="orderProduct('Namaki')">
-                        Order Now
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Manto -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img src="Manto.jpeg" alt="Afghan Manto">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Afghan Manto
-                    </h3>
-
-                    <p>
-                        Traditional Afghan dumplings prepared
-                        with fresh ingredients.
-                    </p>
-
-                    <button onclick="orderProduct('Afghan Manto')">
-                        Order Now
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Ashak -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img src="Ashak.jpeg" alt="Afghan Ashak">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Afghan Ashak
-                    </h3>
-
-                    <p>
-                        Traditional Afghan dumplings served with
-                        delicious homemade toppings.
-                    </p>
-
-                    <button onclick="orderProduct('Afghan Ashak')">
-                        Order Now
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Bolani -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img src="Bolani.jpeg" alt="Afghan Bolani">
-                </div>
-
-                <div class="product-info">
-
-                    <h3>
-                        Afghan Bolani
-                    </h3>
-
-                    <p>
-                        Crispy homemade Afghan flatbread filled with
-                        fresh herbs and traditional flavours.
-                    </p>
-
-                    <button onclick="orderProduct('Afghan Bolani')">
-                        Order Now
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="about-section" id="about">
-
-        <div class="about-content">
-
-            <p class="section-label">
-                About Sahar Home Bakery
-            </p>
-
-            <h2>
-                Traditional Taste,
-                Homemade With Love
-            </h2>
-
-            <p>
-                At Sahar Home Bakery, we prepare traditional Afghan
-                sweets and homemade dishes with fresh ingredients,
-                attention to detail and lots of love.
-            </p>
-
-            <p>
-                Our goal is to bring authentic Afghan flavours
-                directly to your table.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section class="contact-section" id="contact">
-
-        <div class="contact-content">
-
-            <p class="section-label">
-                Get In Touch
-            </p>
-
-            <h2>
-                Order Your Favourite Treats
-            </h2>
-
-            <p>
-                Contact us to ask about our products, prices
-                and available orders.
-            </p>
 
             <div class="contact-buttons">
 
-                <a href="#" class="contact-button">
-                    WhatsApp
+                <a href="tel:+491234567890" class="contact-button">
+                    📞 CALL US
                 </a>
 
-                <a href="#" class="contact-button">
-                    Instagram
+                <a
+                    href="https://wa.me/491234567890"
+                    class="contact-button whatsapp"
+                    target="_blank"
+                >
+                    💬 WHATSAPP
                 </a>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
 
     <!-- ================= FOOTER ================= -->
@@ -440,18 +589,38 @@
 
         <div class="footer-logo">
 
-            <img src="Logo.jpeg" alt="Sahar Home Bakery">
+            <img
+                src="Logo.jpeg"
+                alt="Sahar Home Bakery"
+            >
+
+            <p>
+                Authentic Afghan Homemade Bakery
+            </p>
 
         </div>
 
-        <p>
+        <div class="footer-line"></div>
+
+        <p class="copyright">
             © 2026 Sahar Home Bakery. All rights reserved.
         </p>
 
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- ================= WHATSAPP FLOATING BUTTON ================= -->
+
+    <a
+        href="https://wa.me/491234567890"
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat with Sahar Home Bakery on WhatsApp"
+    >
+        <span>◔</span>
+        <span>Chat with us</span>
+    </a>
+
 
     <script src="script.js"></script>
 
