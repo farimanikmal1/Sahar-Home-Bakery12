@@ -1139,9 +1139,8 @@ a {
     }
 }
 
-
 /* =====================================================
-   MOBILE MENU
+   MOBILE SIDE MENU
 ===================================================== */
 
 .menu-button {
@@ -1160,30 +1159,22 @@ a {
 
     line-height: 1;
 
-    transition: 0.3s ease;
-}
-
-.menu-button:hover {
-    color: #a47743;
+    z-index: 1200;
 }
 
 
-/* =====================================================
-   MOBILE NAVIGATION
-===================================================== */
+/* Dark background behind the menu */
 
 @media (max-width: 768px) {
 
     .header {
         position: relative;
-
         height: 85px;
-
         padding: 0 20px;
     }
 
 
-    /* Three-line button */
+    /* Three-line menu button */
 
     .menu-button {
         display: flex;
@@ -1195,48 +1186,56 @@ a {
 
         width: 45px;
         height: 45px;
-
-        z-index: 1100;
     }
 
 
-    /* Mobile navigation */
+    /* =================================================
+       SIDE NAVIGATION
+    ================================================= */
 
     .navbar {
-        position: absolute;
+        position: fixed;
 
-        top: 100%;
-        left: 0;
+        top: 0;
+        right: 0;
 
-        width: 100%;
+        width: 320px;
+        max-width: 85vw;
 
-        display: none;
+        height: 100vh;
+
+        display: flex;
 
         flex-direction: column;
 
         align-items: center;
 
+        justify-content: flex-start;
+
         gap: 0;
 
-        padding: 18px 20px 25px;
+        padding: 35px 25px;
 
-        background: rgba(255, 253, 249, 0.98);
-
-        backdrop-filter: blur(10px);
+        background: #fffdf9;
 
         box-shadow:
-            0 12px 30px rgba(60, 40, 30, 0.15);
+            -10px 0 35px rgba(55, 35, 25, 0.18);
 
-        border-top: 1px solid rgba(176, 135, 82, 0.15);
+        transform: translateX(100%);
 
-        z-index: 1000;
+        transition:
+            transform 0.35s ease;
+
+        z-index: 1100;
+
+        overflow-y: auto;
     }
 
 
-    /* When menu is opened */
+    /* Open menu */
 
     .navbar.active {
-        display: flex;
+        transform: translateX(0);
     }
 
 
@@ -1247,25 +1246,32 @@ a {
 
         text-align: center;
 
-        padding: 15px 20px;
-
-        font-size: 14px;
-
-        letter-spacing: 1.5px;
+        padding: 18px 10px;
 
         color: #5c493d;
 
-        border-bottom: 1px solid
-            rgba(92, 61, 39, 0.08);
+        font-family: Georgia, "Times New Roman", serif;
+
+        font-size: 15px;
+
+        letter-spacing: 2px;
+
+        border-bottom:
+            1px solid rgba(176, 135, 82, 0.18);
+
+        transition: 0.3s ease;
     }
 
 
-    .navbar a:last-child {
-        border-bottom: none;
+    .navbar a:hover {
+        color: #a47743;
+
+        background:
+            rgba(176, 135, 82, 0.06);
     }
 
 
-    /* Active link */
+    /* Remove desktop active underline */
 
     .navbar a.active::after {
         display: none;
@@ -1275,15 +1281,26 @@ a {
     /* Order button */
 
     .navbar .order-button {
-        width: auto;
+        width: 180px;
 
-        min-width: 160px;
+        min-width: 180px;
 
-        margin-top: 15px;
+        margin-top: 25px;
 
-        padding: 13px 25px;
+        padding: 14px 20px;
 
-        border-bottom: none;
+        color: #ffffff;
+
+        background: #684534;
+
+        border: none;
+
+        border-radius: 30px;
+    }
+
+
+    .navbar .order-button:hover {
+        background: #8a6046;
 
         color: #ffffff;
     }
