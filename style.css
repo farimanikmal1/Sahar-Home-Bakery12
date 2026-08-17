@@ -862,46 +862,147 @@ a {
 
 .footer {
     padding: 60px 20px 30px;
-
     text-align: center;
-
     background: #3c291f;
-
     color: #ffffff;
 }
 
-.footer-logo img {
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   FOOTER BRAND
+===================================================== */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-brand img {
     width: 190px;
-
     max-height: 85px;
-
     object-fit: contain;
-
     margin-bottom: 15px;
 }
 
-.footer-logo p {
+.footer-brand p {
+    margin: 0;
     color: #d9c2a5;
-
     font-size: 13px;
-
     letter-spacing: 1px;
 }
 
+
+/* =====================================================
+   FOOTER LINE
+===================================================== */
+
 .footer-line {
     width: 80px;
-
     height: 1px;
-
     background: #b78950;
-
     margin: 25px auto;
 }
 
-.copyright {
-    color: #bca795;
 
+/* =====================================================
+   SOCIAL & CONTACT LINKS
+===================================================== */
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 28px 0 32px;
+    flex-wrap: wrap;
+}
+
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 9px 17px;
+
+    border: 1px solid rgba(183, 137, 80, 0.7);
+    border-radius: 30px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 13px;
+    letter-spacing: 0.3px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-social:hover {
+    background: #b78950;
+    color: #3c291f;
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    font-size: 15px;
+    line-height: 1;
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.footer-bottom {
+    border-top: 1px solid rgba(183, 137, 80, 0.25);
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bca795;
     font-size: 12px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 45px 15px 25px;
+    }
+
+    .footer-brand img {
+        width: 160px;
+    }
+
+    .footer-brand p {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        gap: 10px;
+        margin: 25px 0 28px;
+    }
+
+    .footer-social {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
+
 }
 
 
